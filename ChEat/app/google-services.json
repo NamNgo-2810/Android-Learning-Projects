@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "906020957745",
+    "project_id": "cheat-49443",
+    "storage_bucket": "cheat-49443.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906020957745:android:d5edad4b785f70b36daf10",
+        "android_client_info": {
+          "package_name": "com.example.cheat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906020957745-kbrap6j8lo8giuopo9f1b844gllbnfq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs56932xoLdIYuyYuuNdUgrXHyAWz7Bdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906020957745-kbrap6j8lo8giuopo9f1b844gllbnfq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

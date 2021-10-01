@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBird"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bird_1" />
+
+    <TextView
+        android:id="@+id/textViewStartInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="casual"
+        android:text="Tap to Play Game"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCoin1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/coin"
+        tools:layout_editor_absoluteX="617dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCoin2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/coin"
+        tools:layout_editor_absoluteX="617dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <ImageView
+        android:id="@+id/imageViewEnemy1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/red_bee_1"
+        tools:layout_editor_absoluteX="617dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <ImageView
+        android:id="@+id/imageViewEnemy2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/skeleton_fly_02"
+        tools:layout_editor_absoluteX="617dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <ImageView
+        android:id="@+id/imageViewScore"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coin" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageViewScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/favorite_red" />
+
+        <ImageView
+            android:id="@+id/right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/favorite_red" />
+
+        <ImageView
+            android:id="@+id/right3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/favorite_red" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/volume_up"
+        tools:ignore="VectorDrawAbleCompat" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bird"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/bird_1"
+                tools:ignore="VectorDrawableCompat"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bird"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/red_bee"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/red_bee_1"
+                tools:ignore="VectorDrawableCompat"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enemy 1"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/blue_bat"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/skeleton_fly_00"
+                tools:ignore="VectorDrawableCompat"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enemy 2"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/coin"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:srcCompat="@drawable/coin"
+                tools:ignore="VectorDrawableCompat"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 points"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="#009688"
+        android:fontFamily="casual"
+        android:text="Start game"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
